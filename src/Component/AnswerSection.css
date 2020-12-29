@@ -1,0 +1,65 @@
+.answers{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+
+h2{
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 5px;
+    color: deepskyblue;
+    margin-top: 30px;
+}
+
+.answer-area {
+    width: 100%;
+    margin:20px auto;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.answer-area li{
+    margin: 5px auto;
+    counter-increment: step-counter;
+    width: 82%;
+    height: 70px;
+    font-size: 1.8rem;
+    color: deepskyblue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid deepskyblue;
+    border-radius: 15px;
+}
+
+.answer-area li:hover{
+    background-color: deepskyblue;
+    color: white;
+    cursor: pointer;
+}
+
+.answer-area li::before{
+    content: counter(step-counter, upper-alpha);
+    margin: 10px 20px;
+    font-size: 80%;
+    background-color: deepskyblue;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 100%;
+    cursor: pointer;
+}

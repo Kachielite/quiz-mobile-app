@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: deepskyblue;
+}
+
+.progress-bar{
+    margin: 20px 40px;
+}
+
+.question-section{
+    height: 40%;
+    background-color: deepskyblue;
+}
+
+.answer-section{
+    background-color: white;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.results{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    border: 10px solid white;
+    background-color:deepskyblue;
+    color: white;
+    top: 0;
+    left:0;
+}
+
+.results p, .results h2{
+    color: white;
+    font-size: 1.9rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+button{
+    height: 50px;
+    width: max-content;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    color: deepskyblue;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
